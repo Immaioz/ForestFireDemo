@@ -51,7 +51,7 @@ function updateMessages(messages) {
     var decision = document.createElement('h2');
     dec = calculateDecision(messages)
     if (dec === "Alarm!") {
-        text = "Alarm! High fire risk"
+        text = "Alarm! High fire risk "
         decisionContainer.classList.remove('decision-container-no-alarm');
         decisionContainer.classList.add("decision-container-alarm");
         
