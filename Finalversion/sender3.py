@@ -14,7 +14,7 @@ import os
 import random
 
 def forecast(model):
-    dataset_folder = '../../Dataset'
+    dataset_folder = '../Dataset'
     random_directory = random.choice(os.listdir(dataset_folder))
 
     directory_path = os.path.join(dataset_folder, random_directory)
