@@ -67,7 +67,7 @@ function updateMessages(messages) {
     decisionContainer.appendChild(decision);
 }
 
-// Function to calculate the mean value based on the received data
+// Function to calculate the decision value based on the received data
 function calculateDecision(messages) {
     var count = 0;
     var vote = 0;

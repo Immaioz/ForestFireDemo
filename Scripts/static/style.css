@@ -98,9 +98,7 @@ p {
   }
 
   /* Add new styles for danger triangle */
-
-
-  @keyframes blinktriangle {
+ @keyframes blinktriangle {
     0% {
       opacity: 1;
     }
@@ -111,8 +109,7 @@ p {
       opacity: 1;
     }
   }
-  
-/* Add new styles for danger triangle */
+
 #danger-triangle {
   width: 0;
   height: 0;
