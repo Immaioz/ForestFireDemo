@@ -68,13 +68,13 @@ p {
   
   @keyframes blink {
     0% {
-      background-color: rgba(255, 0, 0, 0.8);
+      background-color: rgba(255, 0, 0, 1);
     }
     50% {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 0, 0, 1);
     }
     100% {
-      background-color: rgba(255, 0, 0, 0.8);
+      background-color: rgba(255, 0, 0, 1);
     }
   }
   
@@ -96,3 +96,34 @@ p {
   .decision-container-no-alarm {
     background-color: #00ff00; /* Green background for "No Alarm" */
   }
+
+  /* Add new styles for danger triangle */
+
+
+  @keyframes blinktriangle {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+/* Add new styles for danger triangle */
+#danger-triangle {
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 180px solid red;
+  margin: 20px auto;
+  display: none;
+  animation: blinktriangle 0.5s infinite;
+}
+
+.decision-container-alarm #danger-triangle {
+  display: block;
+}

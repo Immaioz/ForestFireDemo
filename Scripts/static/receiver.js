@@ -46,6 +46,8 @@ function updateMessages(messages) {
     
     // Calculate and display the decision
     var decisionContainer = document.getElementById('decision-container');
+    var dangerTriangle = document.getElementById('danger-triangle');
+    
     decisionContainer.innerHTML = ''; // Clear the decision
     var decision = document.createElement('h2');
     dec = calculateDecision(messages)
@@ -53,11 +55,13 @@ function updateMessages(messages) {
         text = "Alarm! High fire risk "
         decisionContainer.classList.remove('decision-container-no-alarm');
         decisionContainer.classList.add("decision-container-alarm");
+        dangerTriangle.style.display = 'block';
         
     } else {
         text = "No fire detected"
         decisionContainer.classList.remove('decision-container-alarm');
         decisionContainer.classList.add("decision-container-no-alarm");
+        dangerTriangle.style.display = 'none';
     }
     decision.textContent = text;
     decisionContainer.appendChild(decision);
