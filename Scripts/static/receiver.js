@@ -44,10 +44,9 @@ function updateMessages(messages) {
 
 
     
-    // Calculate and display the mean value
+    // Calculate and display the decision
     var decisionContainer = document.getElementById('decision-container');
-    decisionContainer.innerHTML = ''; // Clear the existing mean
-    
+    decisionContainer.innerHTML = ''; // Clear the decision
     var decision = document.createElement('h2');
     dec = calculateDecision(messages)
     if (dec === "Alarm!") {
@@ -85,5 +84,5 @@ function calculateDecision(messages) {
 // Function to periodically fetch the received messages every second
 function startFetching() {
     fetchMessages();
-    setInterval(fetchMessages, 1000);
+    setInterval(fetchMessages, 1100);
 }
