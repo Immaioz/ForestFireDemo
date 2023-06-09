@@ -84,5 +84,5 @@ function calculateDecision(messages) {
 // Function to periodically fetch the received messages every second
 function startFetching() {
     fetchMessages();
-    setInterval(fetchMessages, 1100);
+    setInterval(fetchMessages, 1500);
 }
