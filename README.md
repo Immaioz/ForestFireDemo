@@ -11,4 +11,4 @@ The server will be hosted on 127.0.0.1:5000, that will show the dict with the da
 In the end the server hosted in flask will provide informations about the whole system and the decision made after the vote.
 An example of the demo can be seen below:
 
-![Demo](https://github.com/Immaioz/ForestFireDemo/assets/49716352/ee30dd41-e644-4bb3-b3d1-29152f5ba8fc)
+![demo_new](https://github.com/Immaioz/ForestFireDemo/assets/49716352/13884a36-02e9-4767-8978-d3a18a0e4736)
