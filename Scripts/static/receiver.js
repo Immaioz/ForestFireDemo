@@ -52,7 +52,7 @@ function updateMessages(messages) {
     var decision = document.createElement('h2');
     dec = calculateDecision(messages)
     if (dec === "Alarm!") {
-        text = "Alarm! High fire risk "
+        text = "Alarm! High fire risk"
         decisionContainer.classList.remove('decision-container-no-alarm');
         decisionContainer.classList.add("decision-container-alarm");
         dangerTriangle.style.display = 'block';
@@ -79,7 +79,9 @@ function calculateDecision(messages) {
             count++;
         }
     }
-    if (vote > (count / 2)) {
+    if (count == 0)
+        return "No Alarm"
+    if (vote >= (count / 2)) {
         return "Alarm!";
     } 
     return "No Alarm";
