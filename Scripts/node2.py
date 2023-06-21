@@ -7,8 +7,7 @@ from keras import layers
 from keras.applications.mobilenet_v2 import preprocess_input
 
 import socket
-from message_pb2 import Messaggio  # Import your protocol buffer message definition
-
+from message_pb2 import Messaggio  
 
 import os
 import random

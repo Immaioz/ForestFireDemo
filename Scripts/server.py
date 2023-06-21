@@ -1,7 +1,7 @@
 import socket
 import threading
 from flask import Flask, jsonify, render_template
-from message_pb2 import Messaggio  # Import your protocol buffer message definition
+from message_pb2 import Messaggio  
 
 app = Flask(__name__)
 
@@ -106,8 +106,8 @@ def receive_messages(host, port):
             conn, addr = sock.accept()
             print("Connected to:", addr)
             
-            # Determine the client index based on the address
-            index = addr[1]  # Assuming ports 8000, 8001, 8002 for the clients
+
+            index = addr[1]
 
             # Create a new thread to handle the client connection
             client_thread = threading.Thread(target=handle_client, args=(conn, index))
